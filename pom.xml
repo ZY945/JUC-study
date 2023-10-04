@@ -10,9 +10,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Synchronized-learn</module>
-        <module>ThreadLocal-learn</module>
+        <module>Thread-learn</module>
         <module>JMM-volatile</module>
         <module>CompletableFuture-learn</module>
+        <module>ThreadPoolExecutor-learn</module>
+        <module>Atomic-learn</module>
+        <module>Util-learn</module>
+        <module>ReentrantLock-learn</module>
     </modules>
 
     <properties>
