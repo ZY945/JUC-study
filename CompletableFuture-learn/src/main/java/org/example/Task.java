@@ -1,13 +1,19 @@
 package org.example;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 /**
  * Consumer---入参,无返回
- *
+ * 类比stream流进行学习
  * @author 伍六七
  * @date 2023/8/4 10:11
  */
@@ -18,7 +24,16 @@ public class Task {
         };
     }
 
+    /**
+     * stream流的forEach方法
+     * void forEach(Consumer<? super T> action);
+     * {@link Collection#forEach },
+     * @param taskName
+     * @return
+     */
     public static Consumer<String> getConsumer(String taskName) {
+        List<String> list = Arrays.asList("1", "2", "3", "4", "5");
+        Stream.of(list).forEach(System.out::println);
         return result -> {
             System.out.println(Thread.currentThread().getName() + "(任务名)" + taskName + "----Consumer----入参无返回值：");
             System.out.println("入参为" + result);
