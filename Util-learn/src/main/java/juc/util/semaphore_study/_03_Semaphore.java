@@ -1,10 +1,11 @@
-package JUCsup;
+package juc.util.semaphore_study;
 
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Semaphore--许可，常用acquire获取，release释放
  * @author 伍六七
  * @date 2022/12/3 14:23
  */

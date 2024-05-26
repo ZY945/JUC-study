@@ -1,10 +1,9 @@
-package juc.util.cyclicBarrier_study;
+package juc.util.cyclicBarrier_study.demo;
 
 
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * java.util.concurrent包下面的一个工具类<br/>
@@ -16,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class CyclicBarrierDemo {
     public static void main(String[] args) throws IOException, InterruptedException {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(5,()->{
-            System.out.println("--------所有人团灭了-------");
+            System.out.println("--------所有人集齐了-------");
         });
         System.out.println("团队人数"+cyclicBarrier.getParties());
         Thread thread1 = new Thread(new Aced("1", cyclicBarrier));

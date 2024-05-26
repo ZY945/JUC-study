@@ -1,4 +1,4 @@
-package juc.util.cyclicBarrier_study;
+package juc.util.cyclicBarrier_study.demo;
 
 import java.util.Random;
 import java.util.concurrent.CyclicBarrier;

@@ -16,7 +16,8 @@
         <module>ThreadPoolExecutor-learn</module>
         <module>Atomic-learn</module>
         <module>Util-learn</module>
-        <module>ReentrantLock-learn</module>
+        <module>AbstractQueuedSynchronizer-learn</module>
+        <module>ThreadLocal</module>
     </modules>
 
     <properties>
